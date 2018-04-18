@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		044DD3D32086249000D1709A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3D22086249000D1709A /* AppDelegate.swift */; };
-		044DD3D52086249000D1709A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3D42086249000D1709A /* ViewController.swift */; };
 		044DD3D82086249000D1709A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DD3D62086249000D1709A /* Main.storyboard */; };
 		044DD3DA2086249300D1709A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044DD3D92086249300D1709A /* Assets.xcassets */; };
 		044DD3DD2086249300D1709A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044DD3DB2086249300D1709A /* LaunchScreen.storyboard */; };
+		044DD3E52086251500D1709A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3E42086251500D1709A /* SettingsViewController.swift */; };
+		044DD3E8208625A800D1709A /* CrosstableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3E7208625A800D1709A /* CrosstableViewController.swift */; };
+		044DD3EA2086287400D1709A /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3E92086287400D1709A /* CustomCollectionViewCell.swift */; };
+		044DD3EC208628FA00D1709A /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3EB208628FA00D1709A /* CustomCollectionViewLayout.swift */; };
+		044DD3EE2086322000D1709A /* CrosstableSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3ED2086322000D1709A /* CrosstableSettings.swift */; };
+		044DD3F02086377700D1709A /* UIColor+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044DD3EF2086377700D1709A /* UIColor+Additions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		044DD3CF2086249000D1709A /* Crosstable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crosstable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044DD3D22086249000D1709A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		044DD3D42086249000D1709A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		044DD3D72086249000D1709A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044DD3D92086249300D1709A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044DD3DC2086249300D1709A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		044DD3DE2086249300D1709A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044DD3E42086251500D1709A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		044DD3E7208625A800D1709A /* CrosstableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosstableViewController.swift; sourceTree = "<group>"; };
+		044DD3E92086287400D1709A /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		044DD3EB208628FA00D1709A /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		044DD3ED2086322000D1709A /* CrosstableSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosstableSettings.swift; sourceTree = "<group>"; };
+		044DD3EF2086377700D1709A /* UIColor+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Additions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,51 @@
 		044DD3D12086249000D1709A /* Crosstable */ = {
 			isa = PBXGroup;
 			children = (
-				044DD3D22086249000D1709A /* AppDelegate.swift */,
-				044DD3D42086249000D1709A /* ViewController.swift */,
 				044DD3D62086249000D1709A /* Main.storyboard */,
-				044DD3D92086249300D1709A /* Assets.xcassets */,
-				044DD3DB2086249300D1709A /* LaunchScreen.storyboard */,
+				04B48DBA20875E9C0051933C /* Settings */,
+				04B48DBB20875EAF0051933C /* Crosstable */,
+				04B48DB920875E7C0051933C /* System */,
+				04B48DBC208760C30051933C /* Additions */,
 				044DD3DE2086249300D1709A /* Info.plist */,
 			);
 			path = Crosstable;
+			sourceTree = "<group>";
+		};
+		04B48DB920875E7C0051933C /* System */ = {
+			isa = PBXGroup;
+			children = (
+				044DD3D22086249000D1709A /* AppDelegate.swift */,
+				044DD3DB2086249300D1709A /* LaunchScreen.storyboard */,
+				044DD3D92086249300D1709A /* Assets.xcassets */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		04B48DBA20875E9C0051933C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				044DD3ED2086322000D1709A /* CrosstableSettings.swift */,
+				044DD3E42086251500D1709A /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		04B48DBB20875EAF0051933C /* Crosstable */ = {
+			isa = PBXGroup;
+			children = (
+				044DD3E7208625A800D1709A /* CrosstableViewController.swift */,
+				044DD3EB208628FA00D1709A /* CustomCollectionViewLayout.swift */,
+				044DD3E92086287400D1709A /* CustomCollectionViewCell.swift */,
+			);
+			path = Crosstable;
+			sourceTree = "<group>";
+		};
+		04B48DBC208760C30051933C /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				044DD3EF2086377700D1709A /* UIColor+Additions.swift */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044DD3D52086249000D1709A /* ViewController.swift in Sources */,
+				044DD3E52086251500D1709A /* SettingsViewController.swift in Sources */,
 				044DD3D32086249000D1709A /* AppDelegate.swift in Sources */,
+				044DD3EE2086322000D1709A /* CrosstableSettings.swift in Sources */,
+				044DD3E8208625A800D1709A /* CrosstableViewController.swift in Sources */,
+				044DD3EC208628FA00D1709A /* CustomCollectionViewLayout.swift in Sources */,
+				044DD3EA2086287400D1709A /* CustomCollectionViewCell.swift in Sources */,
+				044DD3F02086377700D1709A /* UIColor+Additions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97P9BWB4ML;
 				INFOPLIST_FILE = Crosstable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97P9BWB4ML;
 				INFOPLIST_FILE = Crosstable/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
